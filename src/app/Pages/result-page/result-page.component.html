@@ -1,0 +1,53 @@
+
+
+<header class="Header"  > 
+    <div class="Logo" style="width: 100%;height: auto;"> 
+     <img src="../assets/images/LuckyTrip_Logo_Small-1.png">
+       <div class="form-outline" style="margin-top: 11px;height: auto; width: 50%; left: -127px; position: relative; float: right;">
+             
+               <input type="text"    style="background: rgb(203 208 216 / 52%); border-radius: 16px 16px 16px 16px;width: 227px;" placeholder=" Enter a destinations" class="form-control" /> 
+               <button class="ButtonCss"   style="    position: relative;
+               left: 165px;"  > Go</button>
+             
+             </div>  
+    </div>
+     <div class="p-5 text-center Header" style="background: url({{this.ImgUrl}}) no-repeat center center #d6bee0;height: 400px;" >
+        <div style="    margin-top: 213px;">
+            <h1 class="mb-3" style="color: aliceblue;">{{CityName}} </h1>
+            <h4 class="mb-3" style="color: aliceblue;">{{CountryName}}</h4>
+        </div>
+ 
+     </div>
+     
+   
+   </header>
+   <body class="body">
+      <div>
+        <span style="    padding-left: 210px;
+        color: yellow;     font-size: 22px;" >  What Its Like ? </span>
+      </div>
+      <div>
+        <span style="    padding-left: 210px;
+        color: white; display: flex;" >{{this.Description}}</span>
+      </div>
+     <div class="container" style="padding: 105px;" >
+        
+       <div>
+         <span style="color: aqua;" >Blog Posts</span>
+       </div>
+       <div class="row row-cols-3" >
+         <div class="col" *ngFor="let item of Activitas; index as i;" >
+           <img src="{{item.thumbnail.image_url}}" style="    border-radius: 12px 12px 12px 12px;"   width="80%" height="90%" >
+         </div>
+        
+         
+       </div>
+       <div class="Footer" >
+       
+        <h1 class="mb-3" style="text-align: center; color: red;">Find a Trip To {{CityName}} </h1>
+        <h5 class="mb-3" style="text-align: center; color: aliceblue;">Tab To Lucky button to Get Started</h5>
+        <img (click)="GetLuckyStatred()" style="position: relative; left: 41%;" src="../../../assets/images/lucky_button.png">
+      </div>
+     </div>
+   </body>
+    

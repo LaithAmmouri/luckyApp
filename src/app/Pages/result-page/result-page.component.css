@@ -1,0 +1,44 @@
+.Header{
+    width: 100%; height: auto;
+    }
+    .Footer
+    {
+      color: white;
+    }
+    .body
+    {
+        position: absolute;
+        background-color:#40254b;
+        width: 100%; 
+        height: auto;
+    }
+    
+    .ButtonCss
+    {
+        position: relative;
+        top: -33px;
+        left: 76px;
+        width: 53px;
+        border-radius: 16px 16px 16px 16px;
+        height: 27px;
+        font-size: 16px;
+        font-weight: bold;
+        border: none;
+        color: white;
+        box-shadow: 3px 1px 8px 1px;
+        background: #d66565;
+    }
+    ::placeholder {
+        color: white;
+        opacity: 1; /* Firefox */
+      }
+    
+      .Logo
+      {
+        position: absolute;
+        width: 178%;
+        height: 80;
+        height: 120%;
+        background: #0000003b;
+        
+      }
